@@ -26,7 +26,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center py-16 px-6" data-testid="section-hero">
       <div className="w-full max-w-6xl">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid top-6 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
