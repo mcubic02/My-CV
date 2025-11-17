@@ -11,7 +11,7 @@ export default function LanguageToggle({ language, onToggle }: LanguageTogglePro
     <motion.div
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="fixed top-6 right-6 z-50 bg-card/95 backdrop-blur-sm rounded-full border border-card-border p-1 shadow-sm"
+      className="fixed top-6 left-6 lg:top-6 lg:right-6 lg:left-auto z-50 bg-card/95 backdrop-blur-sm rounded-full border border-card-border p-1 shadow-sm"
       data-testid="container-language-toggle"
     >
       <div className="flex gap-1">
