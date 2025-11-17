@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import path from "path";
 
 const app = express();
 
@@ -63,7 +64,11 @@ app.use((req, res, next) => {
   if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
-    serveStatic(app);
+    app.use(express.static(path.join(__dirname, '../dist')));
+
+    app.get('*', (_req, res) => {
+      res.sendFile(path.join(__dirname, '../dist/index.html'));
+    });
   }
 
   // ALWAYS serve the app on the port specified in the environment variable PORT
@@ -73,7 +78,6 @@ app.use((req, res, next) => {
   const port = parseInt(process.env.PORT || '5000', 10);
   server.listen({
     port,
-    host: "127.0.0.1",
   }, () => {
     log(`serving on port ${port}`);
   });
