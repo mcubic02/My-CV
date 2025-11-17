@@ -26,7 +26,7 @@ export default function DownloadButton({ language }: DownloadButtonProps) {
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.5 }}
-      className="fixed bottom-8 right-8 z-50"
+      className="fixed bottom-6 right-8 z-50"
       data-testid="container-download-button"
     >
       <Button
