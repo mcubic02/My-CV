@@ -54,13 +54,18 @@ export default function HeroSection({ language }: HeroSectionProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center lg:justify-end"
           >
-            <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-              <img 
-                src="/tech-stack.png" 
-                alt="Tech stack visualization" 
-                className="w-full h-full object-contain"
-                data-testid="img-tech-stack"
-              />
+            <div className="relative w-80 h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+              <div className="space-y-4 text-center">
+                <div className="text-6xl font-bold text-primary" data-testid="text-tech-react">
+                  React.js
+                </div>
+                <div className="text-4xl font-semibold text-chart-2" data-testid="text-tech-node">
+                  Node.js
+                </div>
+                <div className="text-4xl font-semibold text-chart-1" data-testid="text-tech-postgres">
+                  PostgreSQL
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
