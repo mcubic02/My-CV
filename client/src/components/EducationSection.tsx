@@ -16,15 +16,15 @@ export default function EducationSection({ language }: EducationSectionProps) {
         {
           period: '2023 - Present',
           institution: 'FESB',
-          degree: 'University Graduate Study',
-          major: 'Computer Science major',
+          degree: 'Master\'s Degree in Computer Science',
+          major: 'Currently pursuing',
           current: true
         },
         {
           period: '2020 - 2023',
           institution: 'FESB',
-          degree: 'University Undergraduate Study',
-          major: 'Computer Science major'
+          degree: 'Bachelor\'s Degree in Computer Science',
+          major: 'Computer Science Engineer'
         },
         {
           period: '2016 - 2020',
@@ -43,15 +43,15 @@ export default function EducationSection({ language }: EducationSectionProps) {
         {
           period: '2023 - Danas',
           institution: 'FESB',
-          degree: 'Sveučilišni diplomski studij',
-          major: 'Računarstvo',
+          degree: 'Diplomski studij računarstva',
+          major: 'Trenutno studiram',
           current: true
         },
         {
           period: '2020 - 2023',
           institution: 'FESB',
-          degree: 'Sveučilišni preddiplomski studij',
-          major: 'Računarstvo'
+          degree: 'Preddiplomski studij računarstva',
+          major: 'Inženjer računarstva'
         },
         {
           period: '2016 - 2020',
