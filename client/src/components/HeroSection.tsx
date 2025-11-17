@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
-import techStackImage from '@assets/generated_images/Tech_stack_geometric_visual_23c6bdc0.png';
 
 interface HeroSectionProps {
   language: 'en' | 'hr';
@@ -57,7 +56,7 @@ export default function HeroSection({ language }: HeroSectionProps) {
           >
             <div className="relative w-80 h-80 lg:w-96 lg:h-96">
               <img 
-                src={techStackImage} 
+                src="/tech-stack.png" 
                 alt="Tech stack visualization" 
                 className="w-full h-full object-contain"
                 data-testid="img-tech-stack"
